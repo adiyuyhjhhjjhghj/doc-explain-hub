@@ -1,0 +1,125 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* LegalSimplify Design System - Professional legal tech interface */
+
+@layer base {
+  :root {
+    /* Core background and text */
+    --background: 0 0% 99%;
+    --foreground: 220 15% 25%;
+
+    /* Card and surface colors */
+    --card: 0 0% 100%;
+    --card-foreground: 220 15% 25%;
+
+    /* Popover colors */
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 15% 25%;
+
+    /* Primary brand - Professional legal blue */
+    --primary: 220 70% 32%;
+    --primary-foreground: 0 0% 98%;
+    --primary-hover: 220 70% 28%;
+
+    /* Secondary - Light professional gray-blue */
+    --secondary: 220 15% 95%;
+    --secondary-foreground: 220 15% 25%;
+
+    /* Muted colors */
+    --muted: 220 10% 96%;
+    --muted-foreground: 220 10% 45%;
+
+    /* Accent - Trust-building blue */
+    --accent: 215 70% 50%;
+    --accent-foreground: 0 0% 98%;
+
+    /* Risk level indicators */
+    --risk-high: 0 75% 55%;
+    --risk-high-foreground: 0 0% 98%;
+    --risk-medium: 38 85% 55%;
+    --risk-medium-foreground: 0 0% 98%;
+    --risk-low: 120 60% 45%;
+    --risk-low-foreground: 0 0% 98%;
+
+    /* Status colors */
+    --success: 120 60% 45%;
+    --success-foreground: 0 0% 98%;
+    --warning: 38 85% 55%;
+    --warning-foreground: 0 0% 98%;
+    --destructive: 0 75% 55%;
+    --destructive-foreground: 0 0% 98%;
+
+    /* Borders and inputs */
+    --border: 220 15% 88%;
+    --input: 220 15% 88%;
+    --ring: 220 70% 32%;
+
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(220, 70%, 32%), hsl(215, 70%, 40%));
+    --gradient-hero: linear-gradient(135deg, hsl(220, 70%, 32%) 0%, hsl(215, 70%, 45%) 100%);
+    --gradient-card: linear-gradient(180deg, hsl(0, 0%, 100%) 0%, hsl(220, 10%, 98%) 100%);
+
+    /* Shadows */
+    --shadow-legal: 0 4px 20px hsl(220, 70%, 32% / 0.08);
+    --shadow-card: 0 2px 12px hsl(220, 15% / 0.08);
+    --shadow-hover: 0 8px 25px hsl(220, 70%, 32% / 0.12);
+
+    --radius: 0.75rem;
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    /* Dark mode - keeping it simple for legal tech */
+    --background: 220 15% 8%;
+    --foreground: 0 0% 95%;
+    
+    --card: 220 15% 10%;
+    --card-foreground: 0 0% 95%;
+    
+    --popover: 220 15% 10%;
+    --popover-foreground: 0 0% 95%;
+    
+    --primary: 215 70% 55%;
+    --primary-foreground: 220 15% 8%;
+    
+    --secondary: 220 15% 15%;
+    --secondary-foreground: 0 0% 95%;
+    
+    --muted: 220 15% 12%;
+    --muted-foreground: 220 10% 60%;
+    
+    --accent: 215 70% 55%;
+    --accent-foreground: 220 15% 8%;
+    
+    --border: 220 15% 20%;
+    --input: 220 15% 20%;
+    --ring: 215 70% 55%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
