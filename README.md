@@ -1,73 +1,36 @@
-# Welcome to your Lovable project
+# ⚖️ LegalSimplify  
 
-## Project info
+**LegalSimplify** is an AI-powered web app that helps users instantly understand and interact with legal documents in plain, human language.
 
-**URL**: https://lovable.dev/projects/138629ad-7fb6-4658-971d-1ef3eef03192
+---
 
-## How can I edit this code?
+## 🌍 Live Demo  
+👉 [View LegalSimplify in action](https://legalsimplify.netlify.app/)  
 
-There are several ways of editing your application.
+---
 
-**Use Lovable**
+## ✨ Key Features  
+- 📂 Upload **legal PDFs or scanned images** (e.g. contracts, agreements)  
+- 📝 **Clear summarization** in plain English powered by **Google Document AI**  
+- ⚠️ **Risk detection**: highlights & explains clauses that are important or potentially risky  
+- 💬 **Interactive Q&A chat**: users ask questions and get answers with **exact clause citations**, enabled by **GCP Vector Search** (semantic retrieval)  
+- 🖥️ **Access anywhere**: easily view via any device, hosted on **Netlify**  
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/138629ad-7fb6-4658-971d-1ef3eef03192) and start prompting.
+---
 
-Changes made via Lovable will be committed automatically to this repo.
+## 🛠️ Tech Stack  
+- **Frontend**: [Vite](https://vitejs.dev) + [TypeScript](https://www.typescriptlang.org/) + [Tailwind CSS](https://tailwindcss.com)  
+- **AI / Cloud Services**:  
+  - [Google Document AI](https://cloud.google.com/document-ai) for parsing and extraction :contentReference[oaicite:0]{index=0}  
+  - [Vertex AI Matching Engine / GCP Vector Search](https://cloud.google.com/vertex-ai/docs/matching-engine/overview) for semantic Q&A  
+- **Deployment**: Hosted on **Netlify** for fast, global access :contentReference[oaicite:1]{index=1}  
 
-**Use your preferred IDE**
+---
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
-
-**Edit a file directly in GitHub**
-
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/138629ad-7fb6-4658-971d-1ef3eef03192) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+## 🚀 Getting Started Locally  
+```bash
+git clone https://github.com/your-username/your-repo.git
+cd your-repo
+npm install
+npm run dev       # start dev server
+npm run build     # create production build
